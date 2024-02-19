@@ -1,0 +1,21 @@
+modelType = model_type_preset
+optimizerType = optimizer_type_preset
+train_func = train_neural_network_model
+
+#Linear_Model_in_features = 28
+#Linear_Model_out_features = 10
+
+num_epochs_list = 100
+learning_rate_list = 0.03
+batch_size_list = 128
+loss_func_list = loss_func_preset
+accuracy_func_list = get_accuracy
+error_func_list = get_error
+
+compare_id = 1
+
+print(f'The current dataset is {current_dataset_name}.')
+train_start_time = datetime.now().strftime("%Y-%m-%d %H.%M.%S")
+print(f'The current train start time is {train_start_time}.')
+
+experiment_neural_network_model(train_dataset, test_dataset, modelType, optimizerType, train_func, num_epochs_list, learning_rate_list, batch_size_list, loss_func_list, accuracy_func_list, error_func_list, compare_id)
