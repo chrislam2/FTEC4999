@@ -171,6 +171,37 @@ print(f'The current train start time is {train_start_time}.')
 current_method_name = "FedAvg"
 experiment_FedAvg_model(train_dataset, test_dataset, dataset_distributing_func, modelType, optimizerType, itera_func, global_epochs_list, local_epochs_list, num_clients_list, random_sample_client_number_list, learning_rate_list, batch_size_list, aggregate_func_list, loss_func_list, accuracy_func_list, error_func_list, compare_id)
 
+2024-02-24 14.21.05
+modelType = model_type_preset
+optimizerType = optimizer_type_preset
+itera_func = iterate_model_simple
+dataset_distributing_func = split_datasets_for_clients_custom
+
+custom_split_dataset_iid = False
+custom_split_dataset_power_law = True
+custom_split_dataset_balance = False
+custom_split_dataset_seed = 42
+
+global_epochs_list = 100
+local_epochs_list = [10]
+num_clients_list = [10]
+random_sample_client_number_list = [10]
+learning_rate_list = 0.03
+batch_size_list = 128
+aggregate_func_list = federated_averaging
+loss_func_list = loss_func_preset
+accuracy_func_list = get_accuracy
+error_func_list = get_error
+
+compare_id = 2
+
+print(f'The current dataset is {current_dataset_name}.')
+train_start_time = datetime.now().strftime("%Y-%m-%d %H.%M.%S")
+print(f'The current train start time is {train_start_time}.')
+
+current_method_name = "FedAvg"
+experiment_FedAvg_model(train_dataset, test_dataset, dataset_distributing_func, modelType, optimizerType, itera_func, global_epochs_list, local_epochs_list, num_clients_list, random_sample_client_number_list, learning_rate_list, batch_size_list, aggregate_func_list, loss_func_list, accuracy_func_list, error_func_list, compare_id)
+
 ### Compare Random Client Number ###
 2024-02-24 14.59.19
 modelType = model_type_preset
