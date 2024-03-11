@@ -1,0 +1,46 @@
+
+        === MNIST_FedProx_GE_100_LE_10_C_1000_RC_200_lr_0.03_B_128 ===
+        The experiment ID is: 2
+        The train start time is: 2024-03-08 12.12.44
+        The dataset is: MNIST
+        current_method_name = FedProx
+        [should be FedProx]
+
+        modelType = MNIST_CNN_Model
+        itera_func = iterate_model_FedProx
+        optimizerType = SGD
+        dataset_distributing_func = split_datasets_for_clients_custom
+
+        custom_split_dataset_iid = True
+        custom_split_dataset_power_law = False
+        custom_split_dataset_balance = False
+        custom_split_dataset_seed = 42
+
+        global_epochs_list = [100]
+        local_epochs_list = [10]
+        num_clients_list = [1000]
+        random_sample_client_number_list = [200]
+        learning_rate_list = [0.03]
+        batch_size_list = [128]
+        aggregate_func_list = [<function federated_averaging at 0x00000272737BC670>]
+        loss_func_list = [<function cross_entropy at 0x000002726E0D2830>]
+        accuracy_func_list = [<function get_accuracy at 0x0000027273757640>]
+        error_func_list = [<function get_error at 0x00000272737576D0>]
+        straggler_list = [0, 500, 900]
+        mu_list = [1.0]
+        compare_id = 11
+
+        !-- Current Status --!
+        global_epochs = 100
+        local_epochs = 10
+        num_clients = 1000
+        random_sample_client_number = 200
+        learning_rate = 0.03
+        batch_size = 128
+        aggregate_func = federated_averaging
+        loss_func = cross_entropy
+        accuracy_func = get_accuracy
+        error_func = get_error
+        straggler = 500
+        mu = 1.0
+        
