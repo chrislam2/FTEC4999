@@ -1,0 +1,46 @@
+
+        === MNIST_Scaffold_GE_100_LE_10_C_1000_RC_500_lr_0.03_B_1000 ===
+        The experiment ID is: 3
+        The train start time is: 2024-03-13 12.24.26
+        The dataset is: MNIST
+        current_method_name = Scaffold
+        [should be FedProx]
+
+        modelType = MNIST_CNN_Model
+        itera_func = iterate_model_simple
+        optimizerType = ScaffoldOptimizer
+        dataset_distributing_func = split_datasets_for_clients_custom
+
+        custom_split_dataset_iid = False
+        custom_split_dataset_power_law = True
+        custom_split_dataset_balance = False
+        custom_split_dataset_seed = 42
+
+        global_epochs_list = [100]
+        local_epochs_list = [10]
+        num_clients_list = [1000]
+        random_sample_client_number_list = [500]
+        learning_rate_list = [0.03]
+        global_step_size_list = [1.0]
+        batch_size_list = [10, 128, 1000]
+        loss_func_list = [<function cross_entropy at 0x0000020B39B42F80>]
+        accuracy_func_list = [<function get_accuracy at 0x0000020B3F1D5750>]
+        error_func_list = [<function get_error at 0x0000020B3F1D57E0>]
+        straggler_list = [0]
+        Scaffold_update_controls_use_gradient = False
+        compare_id = 7
+
+        !-- Current Status --!
+        global_epochs = 100
+        local_epochs = 10
+        num_clients = 1000
+        random_sample_client_number = 500
+        learning_rate = 0.03
+        global_step_size = 1.0
+        batch_size = 1000
+        loss_func = cross_entropy
+        accuracy_func = get_accuracy
+        error_func = get_error
+        straggler = 0
+        Scaffold_update_controls_use_gradient = False
+        
