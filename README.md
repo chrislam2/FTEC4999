@@ -6,3 +6,9 @@ Federated learning is a decentralized approach to machine learning that allows m
 2. Investigate the influence of adversaries and stragglers on the performance and efficiency of federated learning.
 3. Assess the robustness and resilience of federated learning algorithms in real datasets.
 4. Identify areas for improvement and advancement in federated learning based on the findings.
+
+## Experiment Settings
+- Algorithms: FedAvg, FedProx, Scaffold
+- Code details: Main.ipynb
+
+The experiment focuses on evaluating the performance of three federated learning algorithms: FedAvg, FedProx, and Scaffold. The code implementation and specific details can be found in the Main.ipynb file.
