@@ -1,0 +1,55 @@
+
+        === MNIST_Scaffold_GE_100_LE_10_C_1000_RC_500_lr_0.03_B_10 ===
+        The experiment ID is: 2
+        The train start time is: 2024-03-25 14.57.58
+        The dataset is: MNIST
+        current_method_name = Scaffold
+        [should be Scaffold]
+
+        experiment_rounds = 4
+
+        modelType = MNIST_CNN_Model
+        itera_func = iterate_model_simple
+        optimizerType = ScaffoldOptimizer
+        dataset_distributing_func = split_datasets_for_clients_custom
+
+        custom_split_dataset_iid = True
+        custom_split_dataset_power_law = False
+        custom_split_dataset_balance = False
+        custom_split_dataset_seed = 42
+
+        global_epochs_list = [100]
+        local_epochs_list = [10]
+        num_clients_list = [10, 1000, 10, 1000]
+        random_sample_client_number_list = [10, 500, 10, 500]
+        learning_rate_list = [0.03]
+        global_step_size_list = [1.0]
+        batch_size_list = [10]
+        loss_func_list = [<function cross_entropy at 0x00000179E4862A70>]
+        accuracy_func_list = [<function get_accuracy at 0x00000179E9ECF910>]
+        error_func_list = [<function get_error at 0x00000179E9ECF9A0>]
+        Scaffold_update_controls_use_gradient_list = [True]
+        straggler_list = [0]
+        adversary_list = [1, 100, 1, 100]
+        adversary_attack_func_list = [<function adversarial_attack_by_value_Scaffold at 0x00000179E9F18B80>]
+        adversary_attack_value_list = [10000]
+        adversary_attack_Scaffold_all_list = [False, False, True, True]
+
+        !-- Current Status --!
+        global_epochs = 100
+        local_epochs = 10
+        num_clients = 1000
+        random_sample_client_number = 500
+        learning_rate = 0.03
+        global_step_size = 1.0
+        batch_size = 10
+        loss_func = cross_entropy
+        accuracy_func = get_accuracy
+        error_func = get_error
+        Scaffold_update_controls_use_gradient = True
+        straggler = 0
+        adversary = 100
+        adversary_attack_func = <function adversarial_attack_by_value_Scaffold at 0x00000179E9F18B80>
+        adversary_attack_value = 10000
+        adversary_attack_Scaffold_all = False
+        
