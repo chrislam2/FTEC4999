@@ -1,0 +1,27 @@
+
+        === CIFAR10_Centralized_E_100_lr_0.03_B_128 ===
+        The experiment ID is: 1
+        The train start time is: 2024-03-27 13.08.48
+        The dataset is: CIFAR10
+        [should be Centralized Training]
+
+        experiment_rounds = 1
+
+        modelType = CIFAR10_CNN_Model
+        optimizerType = SGD
+
+        num_epochs_list = [100]
+        learning_rate_list = [0.03]
+        batch_size_list = [128]
+        loss_func_list = [<function cross_entropy at 0x000001A48FA6E4D0>]
+        accuracy_func_list = [<function get_accuracy at 0x000001A49725E0E0>]
+        error_func_list = [<function get_error at 0x000001A49725E170>]
+
+        !-- Current Status --!
+        num_epochs = 100
+        learning_rate = 0.03
+        batch_size = 128
+        loss_func = cross_entropy
+        accuracy_func = get_accuracy
+        error_func = get_error
+        
