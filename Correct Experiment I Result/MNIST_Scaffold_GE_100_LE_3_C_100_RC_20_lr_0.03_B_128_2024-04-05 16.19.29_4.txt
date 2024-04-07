@@ -1,0 +1,57 @@
+
+        === MNIST_Scaffold_GE_100_LE_3_C_100_RC_20_lr_0.03_B_128 ===
+        The experiment ID is: 4
+        The train start time is: 2024-04-05 16.19.29
+        The dataset is: MNIST
+        current_method_name = Scaffold
+        [should be Scaffold]
+
+        experiment_rounds = 4
+
+        modelType = MNIST_CNN_Model
+        itera_func = iterate_model_simple
+        optimizerType = ScaffoldOptimizer
+        dataset_distributing_func = split_datasets_for_clients_custom
+
+        custom_split_dataset_iid = True
+        custom_split_dataset_power_law = False
+        custom_split_dataset_balance = False
+        custom_split_dataset_seed = 42
+
+        global_epochs_list = [100]
+        local_epochs_list = [3]
+        num_clients_list = [10, 10, 100, 100]
+        random_sample_client_number_list = [10, 10, 20, 20]
+        learning_rate_list = [0.03]
+        global_step_size_list = [1.0]
+        batch_size_list = [128]
+        aggregate_func_list = [<function federated_averaging_Scaffold at 0x0000019E8AFCDFC0>]
+        loss_func_list = [<function cross_entropy at 0x0000019E859DF370>]
+        accuracy_func_list = [<function get_accuracy at 0x0000019E8AFCD2D0>]
+        error_func_list = [<function get_error at 0x0000019E8AFCD360>]
+        Scaffold_update_controls_use_gradient_list = [True, True, False, False]
+        straggler_list = [0]
+        adversary_list = [0]
+        adversary_attack_func_list = [<function adversarial_attack_by_value_Scaffold at 0x0000019E8AFCFE20>]
+        adversary_attack_value_list = [10000]
+        adversary_attack_Scaffold_all_list = [False]
+
+        !-- Current Status --!
+        global_epochs = 100
+        local_epochs = 3
+        num_clients = 100
+        random_sample_client_number = 20
+        learning_rate = 0.03
+        global_step_size = 1.0
+        batch_size = 128
+        aggregate_func = federated_averaging_Scaffold
+        loss_func = cross_entropy
+        accuracy_func = get_accuracy
+        error_func = get_error
+        Scaffold_update_controls_use_gradient = False
+        straggler = 0
+        adversary = 0
+        adversary_attack_func = <function adversarial_attack_by_value_Scaffold at 0x0000019E8AFCFE20>
+        adversary_attack_value = 10000
+        adversary_attack_Scaffold_all = False
+        
