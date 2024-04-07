@@ -32,7 +32,7 @@
         mu_list = [0, 0, 0, 1.0, 1.0, 1.0]
         adversary_list = [0]
         adversary_attack_func_list = [<function adversarial_attack_by_value at 0x0000022D245DBD00>]
-        adversary_attack_value_list = [10000]
+        adversary_attack_value_list = [0]
 
         !-- Current Status --!
         global_epochs = 100
