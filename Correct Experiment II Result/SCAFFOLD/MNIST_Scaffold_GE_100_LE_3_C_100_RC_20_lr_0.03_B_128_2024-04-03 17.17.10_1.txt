@@ -33,7 +33,7 @@
         straggler_list = [0, 50, 90]
         adversary_list = [0]
         adversary_attack_func_list = [<function adversarial_attack_by_value_Scaffold at 0x0000022A0DFF40D0>]
-        adversary_attack_value_list = [10000]
+        adversary_attack_value_list = [0]
         adversary_attack_Scaffold_all_list = [False]
 
         !-- Current Status --!
