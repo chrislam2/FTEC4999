@@ -1,0 +1,53 @@
+
+        === MNIST_FedProx_GE_100_LE_3_C_100_RC_20_lr_0.03_B_128 ===
+        The experiment ID is: 3
+        The train start time is: 2024-04-07 18.35.04
+        The dataset is: MNIST
+        current_method_name = FedProx
+        [should be FedProx]
+
+        experiment_rounds = 9
+
+        modelType = MNIST_CNN_Model
+        itera_func = iterate_model_FedProx
+        optimizerType = SGD
+        dataset_distributing_func = split_datasets_for_clients_custom
+
+        custom_split_dataset_iid = True
+        custom_split_dataset_power_law = False
+        custom_split_dataset_balance = False
+        custom_split_dataset_seed = 42
+
+        global_epochs_list = [100]
+        local_epochs_list = [3]
+        num_clients_list = [100]
+        random_sample_client_number_list = [20]
+        learning_rate_list = [0.03]
+        batch_size_list = [128]
+        aggregate_func_list = [<function federated_averaging at 0x0000029AD7A2EC20>]
+        loss_func_list = [<function cross_entropy at 0x0000029AD26183A0>]
+        accuracy_func_list = [<function get_accuracy at 0x0000029AD7A2D5A0>]
+        error_func_list = [<function get_error at 0x0000029AD7A2D750>]
+        straggler_list = [0, 50, 90, 0, 50, 90, 0, 50, 90]
+        mu_list = [0.2, 0.2, 0.2, 0.5, 0.5, 0.5, 0.8, 0.8, 0.8]
+        adversary_list = [0]
+        adversary_attack_func_list = [<function adversarial_attack_by_value at 0x0000029AD7A2E8C0>]
+        adversary_attack_value_list = [10000]
+
+        !-- Current Status --!
+        global_epochs = 100
+        local_epochs = 3
+        num_clients = 100
+        random_sample_client_number = 20
+        learning_rate = 0.03
+        batch_size = 128
+        aggregate_func = federated_averaging
+        loss_func = cross_entropy
+        accuracy_func = get_accuracy
+        error_func = get_error
+        straggler = 90
+        mu = 0.2
+        adversary = 0
+        adversary_attack_func = <function adversarial_attack_by_value at 0x0000029AD7A2E8C0>
+        adversary_attack_value = 10000
+        
