@@ -1,3 +1,0 @@
-Training Loss在FedAvg不彈起的原因
-若每一次communication round，對client進行random splite，則可避免training loss彈起
-但為什麼會如此則不明
