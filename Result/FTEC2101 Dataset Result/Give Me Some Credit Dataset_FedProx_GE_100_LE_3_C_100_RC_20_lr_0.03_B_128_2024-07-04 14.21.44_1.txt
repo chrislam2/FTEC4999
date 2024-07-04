@@ -1,0 +1,53 @@
+
+        === Give Me Some Credit Dataset_FedProx_GE_100_LE_3_C_100_RC_20_lr_0.03_B_128 ===
+        The experiment ID is: 1
+        The train start time is: 2024-07-04 14.21.44
+        The dataset is: Give Me Some Credit Dataset
+        current_method_name = FedProx
+        [should be FedProx]
+
+        experiment_rounds = 1
+
+        modelType = Logistic_Regression_Model
+        itera_func = iterate_model_FedProx
+        optimizerType = SGD
+        dataset_distributing_func = split_datasets_for_clients_random
+
+        custom_split_dataset_iid = True
+        custom_split_dataset_power_law = False
+        custom_split_dataset_balance = False
+        custom_split_dataset_seed = 42
+
+        global_epochs_list = [100]
+        local_epochs_list = [3]
+        num_clients_list = [100]
+        random_sample_client_number_list = [20]
+        learning_rate_list = [0.03]
+        batch_size_list = [128]
+        aggregate_func_list = [<function federated_averaging at 0x000001840257CC10>]
+        loss_func_list = [BCELoss()]
+        accuracy_func_list = [<function get_accuracy_logistic_regression at 0x000001840252B490>]
+        error_func_list = [<function get_error_logistic_regression at 0x000001840252B520>]
+        straggler_list = [0]
+        mu_list = [0.5]
+        adversary_list = [0]
+        adversary_attack_func_list = [<function adversarial_attack_by_value at 0x000001840257C820>]
+        adversary_attack_value_list = [10000]
+
+        !-- Current Status --!
+        global_epochs = 100
+        local_epochs = 3
+        num_clients = 100
+        random_sample_client_number = 20
+        learning_rate = 0.03
+        batch_size = 128
+        aggregate_func = federated_averaging
+        loss_func = BCELoss()
+        accuracy_func = get_accuracy_logistic_regression
+        error_func = get_error_logistic_regression
+        straggler = 0
+        mu = 0.5
+        adversary = 0
+        adversary_attack_func = <function adversarial_attack_by_value at 0x000001840257C820>
+        adversary_attack_value = 10000
+        
