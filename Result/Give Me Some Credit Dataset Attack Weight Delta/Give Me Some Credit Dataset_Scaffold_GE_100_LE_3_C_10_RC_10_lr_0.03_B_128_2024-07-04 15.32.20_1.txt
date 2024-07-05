@@ -1,0 +1,57 @@
+
+        === Give Me Some Credit Dataset_Scaffold_GE_100_LE_3_C_10_RC_10_lr_0.03_B_128 ===
+        The experiment ID is: 1
+        The train start time is: 2024-07-04 15.32.20
+        The dataset is: Give Me Some Credit Dataset
+        current_method_name = Scaffold
+        [should be Scaffold]
+
+        experiment_rounds = 4
+
+        modelType = Logistic_Regression_Model
+        itera_func = iterate_model_simple
+        optimizerType = ScaffoldOptimizer
+        dataset_distributing_func = split_datasets_for_clients_random
+
+        custom_split_dataset_iid = True
+        custom_split_dataset_power_law = False
+        custom_split_dataset_balance = False
+        custom_split_dataset_seed = 42
+
+        global_epochs_list = [100]
+        local_epochs_list = [3]
+        num_clients_list = [10]
+        random_sample_client_number_list = [10]
+        learning_rate_list = [0.03]
+        global_step_size_list = [1.0]
+        batch_size_list = [128]
+        aggregate_func = federated_averaging_Scaffold
+        loss_func = BCELoss()
+        accuracy_func = get_accuracy_logistic_regression
+        error_func = get_error_logistic_regression
+        Scaffold_update_controls_use_gradient_list = [False]
+        straggler_list = [0]
+        adversary_list = [1]
+        adversary_attack_func_list = [<function adversarial_attack_by_value_Scaffold at 0x0000016BF54B9F30>]
+        adversary_attack_value_list = [0, 1, 10, 1000]
+        adversary_attack_Scaffold_all_list = [False]
+
+        !-- Current Status --!
+        global_epochs = 100
+        local_epochs = 3
+        num_clients = 10
+        random_sample_client_number = 10
+        learning_rate = 0.03
+        global_step_size = 1.0
+        batch_size = 128
+        aggregate_func = federated_averaging_Scaffold
+        loss_func = BCELoss()
+        accuracy_func = get_accuracy_logistic_regression
+        error_func = get_error_logistic_regression
+        Scaffold_update_controls_use_gradient = False
+        straggler = 0
+        adversary = 1
+        adversary_attack_func = <function adversarial_attack_by_value_Scaffold at 0x0000016BF54B9F30>
+        adversary_attack_value = 0
+        adversary_attack_Scaffold_all = False
+        
